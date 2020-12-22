@@ -31,3 +31,6 @@
 * Laravel validation. boleh validate dari client atau server.
 * guna inheritance
 * old ni guna untuk
+* update rule
+* go through semula regex
+* macam mana nak buat audit trail?
