@@ -40,3 +40,4 @@ class StoreTrainingRequest extends FormRequest
         ];
     }
 }
+//
