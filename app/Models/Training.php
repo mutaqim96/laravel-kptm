@@ -17,7 +17,8 @@ class Training extends Model
         return $this->belongsTo('App\Models\User');
     }
 
-    public function getAttachmentAttribute(){
+    public function getAttachmentUrlAttribute(){
+        //boleh buat default image. lso dia tak return broken image ke apa
         //get function getkene pascal case.
         return asset('storage/'.$this->attachment);
     }

@@ -12,5 +12,9 @@
 * stress-test. 16cpu 32 gb ram
 * cara nak buka attachmetn
 * edit kat file show.blade.php
-*dah uncomment balik
+* dah uncomment balik
 * !bug Fix: bukan kene  letak enctype tu kat input. tapi dekat element form tag.
+* belajar macam mana system web function. 
+*buat cron job untuk save file every 3 hari. buat satu script untuk backup db; kat mana nak refer? laravel command. artisan console.
+* kene config extension.
+*
