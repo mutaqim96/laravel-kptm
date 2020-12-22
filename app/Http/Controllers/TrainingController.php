@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Training;
 use File;
 use Storage;
+use App\Http\Requests\StoreTrainingRequest;
 
 class TrainingController extends Controller
 {
@@ -15,7 +16,7 @@ class TrainingController extends Controller
     }
     
     public function index()
-    {
+    {   
         // query trainings from trainings table using model
         //$trainings = Training::paginate(5);
         
@@ -39,16 +40,16 @@ class TrainingController extends Controller
         return view('trainings.create');
     }
 
-    public function store(Request $request)
+    public function store(StoreTrainingRequest $request)
     {   
-        $this->validate(
-            $request,
-            [
-                'title'=>'required|min:10',
-                'description' => 'required|min:5',
-                'attachment' =>  'mimes:jpg,pdf',
-            ]
-            );
+        // $this->validate(
+        //     $request,
+        //     [
+        //         'title'=>'required|min:10',
+        //         'description' => 'required|min:5',
+        //         'attachment' =>  'mimes:jpg,pdf',
+        //     ]
+        //     );
 
         // store all data from form to trainings table
         // dd($request->all());

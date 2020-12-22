@@ -38,3 +38,10 @@
 * validation usually kita buat dekat controller.
 * Sputty package untuk resize gambar
 * laravel form request validation..
+* its not a good practice nak letak rules dekat dalam validate. controller kene  nipis. model kene fat.'
+* run>> php artisan make:request StoreTrainingRequest
+* Data Engineer
+* bitquery. nosql vs rdbms.
+* laravel ada limit. learn these strength and understand these limits.
+* j meter stress test
+* Buat class untuk hold and handle request.:dah create pindahkan validation rules into request, pastu includekan class tu.
