@@ -40,7 +40,17 @@ class TrainingController extends Controller
     }
 
     public function store(Request $request)
-    {
+    {   
+        $this->validate(
+            $request,
+            [
+                'title'=>'required',
+                'description' => 'required',
+            ]
+
+
+            );
+
         // store all data from form to trainings table
         // dd($request->all());
 

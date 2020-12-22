@@ -28,3 +28,4 @@
 * lain masalah lain id.
 * uuid. universally uniq id. dia gengerate number through time and date. so, brother ni baca semua even sampai ke wiki.
 ^ Part setup usually lama. 
+* Laravel validation. boleh validate dari client atau server.
