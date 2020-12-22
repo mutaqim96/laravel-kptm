@@ -1,0 +1,8 @@
+* Kita nak update yang baru tapi kalau buat migration unutk alter table
+* kene buat migration file baru.
+* run php artisan make:migration namaaction_nama_table_action_apa
+* tambah schema untuk table function.
+* comment balik yang untuk specific user sahaja. 
+* cater masalah kguna terniary operator
+* enctype tu memang penting untuk hantar file
+* php artisan storage:link

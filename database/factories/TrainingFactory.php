@@ -24,6 +24,7 @@ class TrainingFactory extends Factory
         return [
             'title' => $this->faker->sentence(),
             'description' => $this->faker->text,
+            'trainer'=>$this->faker->name,
             'user_id' => 1,
         ];
     }

@@ -27,9 +27,9 @@
                                     <td>{{ $training->title }}</td>
                                     <td>{{ $training->description }}</td>
                                     <td>
-                                        {{ $training->user->name }}
+                                        {{ $training->user ? $training->user->name : 'no user' }}
                                         <strong>
-                                            ({{ $training->user->email }})
+                                            ({{$training->user ? $training->user->email : 'no email' }})
                                         </strong>
                                     </td>
                                     <td>{{ $training->created_at ? $training->created_at->diffForHumans() : 'NO DATA' }}</td>

@@ -23,6 +23,11 @@
                             <input type="text" name="trainer" class="form-control">
                         </div>
                         <div class="form-group">
+                            <label>Trainer</label>
+                            <input type="file" name="attachment" class="form-control" enctype="multipart/form-data">
+                        </div>
+
+                        <div class="form-group">
                             <button type="submit" class="btn btn-primary">Store My Training</button>
                         </div>
                     </form>
