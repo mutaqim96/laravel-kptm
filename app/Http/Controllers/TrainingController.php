@@ -51,7 +51,12 @@ class TrainingController extends Controller
         $training->save();
 
         // return redirect back
-        return redirect()->back();
+        return redirect()
+            ->route('training:list')
+            ->with([
+                'alert-type' => 'alert-primary',
+                'alert' => 'Your training has been created!'
+            ]);
     }
 
     public function show(Training $training)
@@ -73,13 +78,23 @@ class TrainingController extends Controller
         $training->update($request->only('title', 'description', 'trainer'));
 
         // return to /trainings
-        return redirect()->route('training:list');
+        return redirect()
+            ->route('training:list')
+            ->with([
+                'alert-type' => 'alert-success',
+                'alert' => 'Your training has been updated!'
+            ]);
     }
 
     public function delete(Training $training)
     {
         $training->delete();
 
-        return redirect()->route('training:list');
+        return redirect()
+            ->route('training:list')
+            ->with([
+                'alert-type' => 'alert-danger',
+                'alert' => 'Your training has been deleted.'
+            ]);
     }
 }

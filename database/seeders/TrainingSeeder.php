@@ -17,7 +17,7 @@ class TrainingSeeder extends Seeder
         DB::table('trainings')->insert([
             'title' => 'Training Laravel 7 Days @ KPTM',
             'description' => 'Training Laravel 7 Days @ KPTM is ongoing',
-            'trainer' => 'Tarmizi Sanusi'
+            'trainer' => 'Taqim'
         ]);
     }
 }
