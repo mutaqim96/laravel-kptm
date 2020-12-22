@@ -44,8 +44,8 @@ class TrainingController extends Controller
         $this->validate(
             $request,
             [
-                'title'=>'required|min:3',
-                'description' => 'required|min:2',
+                'title'=>'required|min:10',
+                'description' => 'required|min:5',
             ]
             );
 
