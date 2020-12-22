@@ -6,3 +6,5 @@
 * cater masalah kguna terniary operator
 * enctype tu memang penting untuk hantar file
 * php artisan storage:link
+* jangan percaya input dari user. so, kita control dari sini
+* guna nama sebagai id. 

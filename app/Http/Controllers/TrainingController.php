@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Training;
+use File;
+use Storage;
 
 class TrainingController extends Controller
 {
@@ -49,6 +51,21 @@ class TrainingController extends Controller
         $training->trainer = $request->trainer;
         $training->user_id = auth()->user()->id;
         $training->save();
+
+        if($request->hasFile('attachment'))
+        {
+            //tukar nama file. supaya x redundant. kata2 xmau
+            //idnum-yyyy-mm-dd.jpg
+            $filename = $training->id.'-'.date("Y-m-d").'.'.$request->attachment->getClientOriginalExtension();
+            
+
+            //simpan file kat storage, sebab kita tak letak dalam database.
+            Storage::disk('public')->put($filename, File::get($request->attachment));
+
+            //update row dengan filename.
+            $training->update(['attachment'=>$filename]);
+
+        }
 
         // return redirect back
         return redirect()

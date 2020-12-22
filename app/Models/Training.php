@@ -9,7 +9,7 @@ class Training extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title','description','trainer'];
+    protected $fillable = ['title','description','trainer','user_id','attachment'];
 
     // one training belongs to a user - FK
     public function user()
