@@ -8,3 +8,5 @@
 * php artisan storage:link
 * jangan percaya input dari user. so, kita control dari sini
 * guna nama sebagai id. 
+* go through how to make dr; Disaster recovery
+* stress-test. 16cpu 32 gb ram
