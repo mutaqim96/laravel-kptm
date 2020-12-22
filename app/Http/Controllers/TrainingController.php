@@ -45,7 +45,7 @@ class TrainingController extends Controller
             $request,
             [
                 'title'=>'required|min:3',
-                'description' => 'required',
+                'description' => 'required|min:2',
             ]
             );
 

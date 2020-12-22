@@ -21,11 +21,19 @@
                         @csrf
                         <div class="form-group">
                             <label>Title</label>
-                            <input type="text" name="title" class="form-control" required>
+                            <input type="text" name="title" class="form-control" required class="@error('title') is-invalid @enderror" value="{{old('title')}}">
+
+                            @error('title')
+                                <div class="alert alert-danger">{{$message}}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label>Description</label>
-                            <textarea name="description" class="form-control"></textarea>
+                            <textarea name="description" class="form-control" class="@error('description') is-invalid @enderror" value="{{old('description')}}">{{old('description')}}</textarea>
+
+                            @error('description')
+                                <div class="alert alert-danger">{{$message}}</div>
+                            @enderror
                         </div>
                         <div class="form-group">
                             <label>Trainer</label>

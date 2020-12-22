@@ -30,3 +30,4 @@
 ^ Part setup usually lama. 
 * Laravel validation. boleh validate dari client atau server.
 * guna inheritance
+* old ni guna untuk
