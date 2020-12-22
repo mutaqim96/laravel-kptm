@@ -52,3 +52,5 @@
 * Laravel : Search
 * buat div yang boleh float kat belah kiri. lepas tu test. tengok dpt tak keyword.
 * post method je perlukan csrf
+* kalau assign pakai => , kalau nak access isinya guna ->
+* Kalau nak sort.  boleh.

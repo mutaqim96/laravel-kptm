@@ -19,8 +19,14 @@ class TrainingController extends Controller
     {   
         if($request->keyword){
                 $search = $request->keyword;
+                
+                //Kalau nak display semua daripada table user.
+                // $trainings = Training::where('title','LIKE','%'.$search.'%')
+                // ->orWhere('description','LIKE','%'.$search.'%')
+                // ->paginate(5);
 
-                $trainings = Training::where('title','LIKE','%'.$search.'%')
+                //Kalau only untuk user punya training. Orang lain punya training dia takmau tau.
+                $trainings = auth()->user()->trainings()->where('title','LIKE','%'.$search.'%')
                 ->orWhere('description','LIKE','%'.$search.'%')
                 ->paginate(5);
 
