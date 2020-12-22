@@ -10,3 +10,7 @@
 * guna nama sebagai id. 
 * go through how to make dr; Disaster recovery
 * stress-test. 16cpu 32 gb ram
+* cara nak buka attachmetn
+* edit kat file show.blade.php
+*dah uncomment balik
+* !bug Fix: bukan kene  letak enctype tu kat input. tapi dekat element form tag.
