@@ -54,3 +54,5 @@
 * post method je perlukan csrf
 * kalau assign pakai => , kalau nak access isinya guna ->
 * Kalau nak sort.  boleh.
+* test dekat tinker >> $user->trainings()->limit(3)->toSql()
+* kalau nak test kat tinker guna facade>> \DB::table('trainings')->orderBy('created_at','asc')->toSql()
