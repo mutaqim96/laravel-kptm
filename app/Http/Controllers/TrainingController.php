@@ -28,6 +28,7 @@ class TrainingController extends Controller
                 //Kalau only untuk user punya training. Orang lain punya training dia takmau tau.
                 $trainings = auth()->user()->trainings()->where('title','LIKE','%'.$search.'%')
                 ->orWhere('description','LIKE','%'.$search.'%')
+                ->orderBy('created_at','desc')
                 ->paginate(5);
 
         }else{            
