@@ -44,11 +44,9 @@ class TrainingController extends Controller
         $this->validate(
             $request,
             [
-                'title'=>'required',
+                'title'=>'required|min:3',
                 'description' => 'required',
             ]
-
-
             );
 
         // store all data from form to trainings table
