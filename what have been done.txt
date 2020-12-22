@@ -34,3 +34,7 @@
 * update rule
 * go through semula regex
 * macam mana nak buat audit trail?
+*  Structured Programming-> Oop-> Solid-> DP.
+* validation usually kita buat dekat controller.
+* Sputty package untuk resize gambar
+* laravel form request validation..
