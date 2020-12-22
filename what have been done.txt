@@ -48,3 +48,7 @@
 * Macam mana orang attack kita. its a cyber warfare. LEARN. guna ssh
 * macam mana nak override mesej kalau tak suka?
 *letak nama item tu, dengan nama error tu.
+* localization {{}}
+* Laravel : Search
+* buat div yang boleh float kat belah kiri. lepas tu test. tengok dpt tak keyword.
+* post method je perlukan csrf

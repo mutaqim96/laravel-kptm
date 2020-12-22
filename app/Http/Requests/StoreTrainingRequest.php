@@ -26,7 +26,7 @@ class StoreTrainingRequest extends FormRequest
         return [
             'title'=>'required|min:10',
             'description' => 'required|min:5',
-            'attachment' =>  'mimes:jpg,pdf',
+            //'attachment' =>  'mimes:jpg,pdf',
         ];
     }
 
