@@ -45,3 +45,6 @@
 * laravel ada limit. learn these strength and understand these limits.
 * j meter stress test
 * Buat class untuk hold and handle request.:dah create pindahkan validation rules into request, pastu includekan class tu.
+* Macam mana orang attack kita. its a cyber warfare. LEARN. guna ssh
+* macam mana nak override mesej kalau tak suka?
+*letak nama item tu, dengan nama error tu.

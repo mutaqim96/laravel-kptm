@@ -29,4 +29,14 @@ class StoreTrainingRequest extends FormRequest
             'attachment' =>  'mimes:jpg,pdf',
         ];
     }
+
+    public function messages()
+    {
+        return[
+            'title.required'=>'Sila isi tajuk trainingnyaa',
+            'description.required'=> 'Sila isi Desccriptionnyaa',
+            'title.min' => 'tak cukup panjang '
+
+        ];
+    }
 }
