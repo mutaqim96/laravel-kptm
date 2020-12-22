@@ -17,4 +17,14 @@
 * belajar macam mana system web function. 
 *buat cron job untuk save file every 3 hari. buat satu script untuk backup db; kat mana nak refer? laravel command. artisan console.
 * kene config extension.
-*
+* cuba go through magic method.unit testing.
+* model boleh buat macam macam benda.
+!Fahami fundementals. Betul2.
+* Laravel connect multiple database.
+* go through and master kubernetes.
+* kita kene ada extension. odbc driver. untuk connect.
+* boleh define kat controller. kat env define db2 yang ada. and then define, db2 lain tu dalam config/database.php. define je.
+* sebelum kita boleh define sesuatu kita kene kenal dulu. apa yang kita nak define tu. 
+* lain masalah lain id.
+* uuid. universally uniq id. dia gengerate number through time and date. so, brother ni baca semua even sampai ke wiki.
+^ Part setup usually lama. 

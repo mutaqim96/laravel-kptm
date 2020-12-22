@@ -19,6 +19,14 @@ class Training extends Model
 
     public function getAttachmentUrlAttribute(){
         //boleh buat default image. lso dia tak return broken image ke apa
-        //get function getkene pascal case.
+
+        // if($this->attachment){
+        // //get function getkene pascal case.
+        // return asset('storage/'.$this->attachment);}
+        // else{
+        //     return ' location kau punya gambar. guna function asset'
+        // }
         return asset('storage/'.$this->attachment);
+
+    }
     }
