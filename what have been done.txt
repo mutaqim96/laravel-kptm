@@ -57,3 +57,23 @@
 * test dekat tinker >> $user->trainings()->limit(3)->toSql()
 * kalau nak test kat tinker guna facade>> \DB::table('trainings')->orderBy('created_at','asc')->toSql()
 * ni note aku waktu ni
+
+
+
+=================
+DAY 04:
++++++++++++++++++
+
+1. Sending EMail.
+* "guna mailtrap", package. mail server kita free. tapi ada limitation.
+* kalau kita guna mail server lain, nanti google akan consider spam.
+* "MAIL SERVER" yang quality. takut nnty diorang guna spam.
+* Buat satu subdomain untuk system  email.   kalau marketing buat marketing. kalau system guna buat benda lain.. 
+* "mail catcher ", free dan bolehd install kat login
+
+------------------
+Mail Trap:
+------------------
+
+* copy credential terus paste dekat env
+
