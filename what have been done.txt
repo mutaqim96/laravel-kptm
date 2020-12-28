@@ -160,5 +160,8 @@ Cara Nak Buat Job.
 +------+---------------------------------------------------------------+-------+
 
 
-*
+* define dekat env. que_connection.
+* database/redis/sqs <- bergantung pada connection mana kita nak pakai.
+
+
 
