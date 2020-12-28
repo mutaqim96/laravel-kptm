@@ -37,13 +37,13 @@ class TrainingController extends Controller
 
         }else{            
                 // query trainings from trainings table using model
-                //$trainings = Training::paginate(5);
+                $trainings = Training::paginate(5);
                 
-                //get current autenticated user.
-                $user =auth()->user();
+                //get current autenticated user. untuk yang authenticate sahaja.
+                //$user =auth()->user();
 
                 //get user's trainig using relationship(trainings) with pagination by 5 item per page
-                $trainings = $user->trainings()->paginate(5);      
+                //$trainings = $user->trainings()->paginate(5);      
             }
 
 

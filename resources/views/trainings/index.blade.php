@@ -54,7 +54,9 @@
                                     <td>{{ $training->created_at ? $training->created_at->diffForHumans() : 'NO DATA' }}</td>
                                     <td>{{ $training->created_at ?? '-' }}</td>
                                     <td>
+                                        @can('view',$training)
                                         <a href="{{ route('training:show', $training) }}" class="btn btn-primary">View</a>
+                                        @endcan
                                         <a href="{{ route('training:edit', $training) }}" class="btn btn-success">Edit</a>
                                         <a onclick="return confirm('Are you sure?')" href="{{ route('training:delete', $training) }}" class="btn btn-danger">Delete</a>
                                     </td>
