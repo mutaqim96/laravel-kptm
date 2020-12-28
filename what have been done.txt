@@ -122,3 +122,25 @@ Mail Trap:
  * php artisan key:generate
 *
 
+--------
+Cara Nak Buat Job.
+
+* kita tak nak user tunggu. so, buat serentak untuk semua. 
+* kita bawak process hantar email tadi, tapi guna job
+* benda2 penting macam tu boleh dihandle.
+* boleh je guna que. tapi kita guna job.
+* method untuk buat processing kat belaang.
+* Search "laravel Job"
+* guna que. supaya user tak payah tunggu,
+
+* automatekan background process.
+* Dig deeper dalam Que. untuk kelajuan.
+* Amazon sqs untuk manage job
+* rdms ni boleh manage job
+
+* driver notes. 
+* kene ada satu table untuk simpan semua log yang job kita buat.
+* redis kita tak guna pun lagi. redis ni rdms.
+* php artisan make:job NamaJob.
+
+
