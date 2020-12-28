@@ -113,3 +113,12 @@ Mail Trap:
 
 * error Argument 1 passed to App\Mail\TrainingCreated::__construct() must be an instance of App\Model\Training, instance of App\Models\Training given, called in C:\laragon\www\day04\app\Http\Controllers\TrainingController.php on line 110
 * silap eja models untuk define Training punya model
+
+* Bila install new project. 
+* composer install 
+* untuk install smua package kat dalam vendor.
+ * code .
+ * update/buat .env
+ * php artisan key:generate
+*
+
