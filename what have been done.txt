@@ -243,7 +243,27 @@ ELOQUENT
 * practice je semua guna tinker.
 
 * FAHAM MACAM MANA TINKER NI WORK WITH MODEL.
+----------------------------------------
+* Cara nak install Laravel font awesome
 
+Install Font Awesome in Laravel
+
+Installation in Laravel with npm
+npm install --save @fortawesome/fontawesome-free
+
+Include the Font Awesome css in the app.scss file at the top.
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+Add the following line of code to the webpack.mix.js file.
+
+mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts');
+
+* nak update npm 'npm install -g npm'
+
+* Kita boleh install guna cdn
+
+* once dah install. boleh guna semua icon atau resource font awesome
+* contoh kat sini macam mana nak letak gambar user dekat sebelah nama.
 
 
 
