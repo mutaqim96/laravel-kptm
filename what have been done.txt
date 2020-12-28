@@ -292,7 +292,8 @@ Laravel Notifications.
 
 ----------
 Making dropdown untuk notificaiton
-
+-----
+Training created
 
 
 

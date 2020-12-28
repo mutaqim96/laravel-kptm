@@ -10,6 +10,7 @@ use App\Http\Requests\StoreTrainingRequest;
 use Mail;
 use Notification;
 use App\Notifications\DeleteTrainingNotification;
+use App\Notifications\CreateTrainingNotification;
 
 class TrainingController extends Controller
 {
@@ -113,6 +114,10 @@ class TrainingController extends Controller
         
         //send mail guna job; cara nak dispatch job.
         dispatch(new \App\Jobs\SendEmailJob($training));
+
+        //hantar ke notification punya table
+        $user = auth()->user();
+        Notification::send($user, new CreateTrainingNotification());
 
 
         // return redirect back
