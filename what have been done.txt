@@ -317,3 +317,6 @@ Policy created successfully.
 * nak tengok override 403, tengok custome. just letak kat dalam error folder
 
 *nak buang view punya function. so, guna policy untuk control button.
+
+------
+kalau kita simply pindah can punya section. klau buang something dekat view. nanti smua berubah
