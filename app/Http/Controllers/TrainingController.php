@@ -8,7 +8,8 @@ use File;
 use Storage;
 use App\Http\Requests\StoreTrainingRequest;
 use Mail;
-
+use Notification;
+use App\Notification\DeleteTrainingNotification;
 
 class TrainingController extends Controller
 {
@@ -151,7 +152,10 @@ class TrainingController extends Controller
     }
 
     public function delete(Training $training)
-    {
+    {   
+        $user = auth()->user();
+        Notification::send($user, new DeleteTrainingNotification());
+
         if($training->attachment){
             Storage::disk('public')->delete($training->attachment);
         }

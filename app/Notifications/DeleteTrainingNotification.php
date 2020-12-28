@@ -28,8 +28,8 @@ class DeleteTrainingNotification extends Notification
      * @return array
      */
     public function via($notifiable)
-    {
-        return ['mail'];
+    {   //boleh tambah lagi
+        return ['database'];
     }
 
     /**
@@ -41,9 +41,9 @@ class DeleteTrainingNotification extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->line('Training has been deleted.')
+                    ->action('Create New Here', url('/training/create'))
+                    ->line('Thank you!');
     }
 
     /**
@@ -55,7 +55,7 @@ class DeleteTrainingNotification extends Notification
     public function toArray($notifiable)
     {
         return [
-            //
+            'data' => '[System] training has been deleted'
         ];
     }
 }

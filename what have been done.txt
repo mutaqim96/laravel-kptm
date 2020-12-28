@@ -277,9 +277,17 @@ Laravel Notifications.
 
 * time user delete keluar notifications.
 * php artisan make:notification NamaNotification
+* return ['database','mail'];
+* adjust kat mana2. 
+* toArray hantar dalam data
 
+* kalau nak hantar toArray dalam database.
+* kene create table. untuk database notification.
+* php artisan notification:table 
+* jangan lupa migrate.
 
-
+* dekat model kita boleh migrate.
+* trait, build in logic, kita boleh custom
 
 
 
