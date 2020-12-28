@@ -7,6 +7,7 @@ use App\Models\Training;
 use File;
 use Storage;
 use App\Http\Requests\StoreTrainingRequest;
+use Mail;
 
 class TrainingController extends Controller
 {
@@ -73,7 +74,7 @@ class TrainingController extends Controller
         // store all data from form to trainings table
         // dd($request->all());
 
-        //Method 1 - POPO - Plain Old PHP Object
+        //Method 1 - POPO - Plain Old PHP Object boleh tukar jadi mass assignmenr
         $training = new Training();
         $training->title = $request->title;
         $training->description = $request->description;
@@ -95,6 +96,12 @@ class TrainingController extends Controller
             $training->update(['attachment'=>$filename]);
 
         }
+
+        //send email to user
+        Mail::send('email.training-created',[], function($message){
+            $message->to('mutaqim96@gmail.com');
+            $message->subject('Training Created Email using Inline ');
+        });
 
         // return redirect back
         return redirect()

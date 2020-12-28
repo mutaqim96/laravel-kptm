@@ -80,3 +80,11 @@ Mail Trap:
 * done setup smtp setting.
 * Boleh try tengok aws. 
 
+* Bila kita create training dia akan hantar email.
+* "mail facade"
+* edit cantik2 email tu pastu boleh hantar.
+* Mail::send('template maana nak send','dynamic data',functionnakhantar)
+* ni baru static ke email specific
+* boleh guna klas.
+* staging mail server. kita akan nampak sendiri.
+* use Mail sebab kita guna mail punya facade.
