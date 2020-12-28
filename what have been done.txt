@@ -288,7 +288,10 @@ Laravel Notifications.
 
 * dekat model kita boleh migrate.
 * trait, build in logic, kita boleh custom
+* satu user have many traits
 
+----------
+Making dropdown untuk notificaiton
 
 
 

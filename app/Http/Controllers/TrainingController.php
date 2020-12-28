@@ -9,7 +9,7 @@ use Storage;
 use App\Http\Requests\StoreTrainingRequest;
 use Mail;
 use Notification;
-use App\Notification\DeleteTrainingNotification;
+use App\Notifications\DeleteTrainingNotification;
 
 class TrainingController extends Controller
 {

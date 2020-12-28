@@ -57,6 +57,29 @@
                                 </li>
                             @endif
                         @else
+                        <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <i class="fas fa-bell"></i></i>Notifications
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    @forelse(auth()->user()->notifications as $notificaiton)
+                                    <a href="dopdown-item">{{$notificaiton->data['data']}}</a>
+                                    <br/>
+                                    @empty
+                                    <a class="dropdown-item">You do not have any notification yet!</a>
+                                    @endforelse
+
+                                </div>
+
+                        </li> 
+                                
+                               
+
+
+
+
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 <i class="fas fa-user"></i></i>{{ Auth::user()->name }}
