@@ -312,5 +312,6 @@ kene tambah --model=Model.
 λ php artisan make:policy Training --model=Training
 Policy created successfully.
 
+* buat policy, register dalam authservice provider
 * === strict equal
-* nak tengok override 403
+* nak tengok override 403, tengok custome. just letak kat dalam error folder
