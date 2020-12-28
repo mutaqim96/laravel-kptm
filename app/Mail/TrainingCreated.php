@@ -20,7 +20,7 @@ class TrainingCreated extends Mailable
      */
     public function __construct(Training $training)
     {
-        
+        $this ->training = $training;
     }
 
     /**
