@@ -95,3 +95,11 @@ Mail Trap:
 * adjsut dekat array
 * ['a' => something]
 * a tu akan dipassing ke blade.php 
+
+* Mailable Classes.
+* search "mail classes."
+* email provider yang laju.
+* php artisan make:mail namaMail
+* construct + build.
+* apa nak inject + apa nak buat
+* construct + helpet
