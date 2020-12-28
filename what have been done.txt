@@ -90,3 +90,8 @@ Mail Trap:
 * use Mail sebab kita guna mail punya facade.
 
 * broken pipe maybe sebab wifi.
+
+* dynamic data, kita ubah. 
+* adjsut dekat array
+* ['a' => something]
+* a tu akan dipassing ke blade.php 
