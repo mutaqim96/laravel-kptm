@@ -189,3 +189,65 @@ Cara Nak Buat Job.
 * untuk esok, mssql server. kene ada ada extension
 * install extension, odbc untuk sql server
 
+--------
+ELOQUENT
+
+* bnyak libatkan MODEL
+* ORM 
+* pastikan kita config database. laravel support 4 jenis db. kalau takde kene custom configuration.
+* buat model trus ada seeder ke apa.
+* php artisan  make:model NamaModel --apnak/ -a senang sikit.
+* make: model punya command. auto generate models dalam app/Models.
+
+* Table Names
+* kalau nama model BentukSingular. table akan jadi BentukPlural
+* kalau nak custom nama  ke apa.
+
+* Primary Keys
+* by default nama_id.
+* uuid , adjust autoincrement.
+* protected $keyType = 'string';
+
+* Timestamp.
+* public timestamp false. crud takkan kacau table ni.
+* constant Created function
+
+* Database Connections.
+* bergantung pada keadaan. 
+* bila ada multiple connection
+* protected $connection = 'sqlite';
+* buat je 2 model. 
+* yang penting setiap model define connection dia kat mana
+
+* Default Attribute Values.
+* kita define dekat model.
+* 'delayed' => false,
+* cara kita  nak override apa2 je dalma laravel
+
+*Retriving.
+* use a/b/models
+
+* Buildig Query
+* kalau nak buat search hari tu.
+
+* Cara nak buat refresh method.
+* refresh bila nka buat custom audit trails.
+
+* Collections.
+* query all and quesry get.
+
+* semua ni boleh guna tinker.
+* advance subqueryy.\
+* model binding.
+* guna popo atau mas assignement.
+* practice je semua guna tinker.
+
+* FAHAM MACAM MANA TINKER NI WORK WITH MODEL.
+
+
+
+
+
+
+
+
