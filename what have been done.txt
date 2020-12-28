@@ -175,3 +175,12 @@ Cara Nak Buat Job.
 ----------
 * Macam mana nak buat supervisor untuk dispatch Job
 * php artisan queue:listen
+
+* service container. maksud dia apa.
+* search "solid priciple."
+* satu controller satu use case. kalau training, untuk training sahaja.
+* job locking. awas jangan deadlock. 
+* job red limiting, untuk jaga daripada deadelock.
+* service container, apa2 class yang boleh di inject something, dan kita buat something with that data.
+* inject object daripada class lain. 
+
