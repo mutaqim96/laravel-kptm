@@ -171,3 +171,7 @@ Cara Nak Buat Job.
 * xde supervisor nak run job.
 * gambar tu jadikan job
 * bug fix. $this-> training =$training;
+
+----------
+* Macam mana nak buat supervisor untuk dispatch Job
+* php artisan queue:listen
