@@ -3,7 +3,7 @@
 <p>YOur Training Created using mailable class</p>
 
 <p>
-  Training title: {{$title}}
+  Training title: 
   <br>
-  Description : {{$description}}
+  Description : 
 </p>

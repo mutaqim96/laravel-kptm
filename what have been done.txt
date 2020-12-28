@@ -102,4 +102,7 @@ Mail Trap:
 * php artisan make:mail namaMail
 * construct + build.
 * apa nak inject + apa nak buat
-* construct + helpet
+* construct + helper
+* nak guna  class tadi. Mail::to('kepada siapa'->send(new location kat mana atau boleh declare.))
+* kita panggil class tu punya constructor.
+* cara nak inject dynamic data.
