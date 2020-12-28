@@ -320,3 +320,5 @@ Policy created successfully.
 
 ------
 kalau kita simply pindah can punya section. klau buang something dekat view. nanti smua berubah
+
+!update sekali dekat policy

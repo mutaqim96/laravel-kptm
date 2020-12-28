@@ -146,6 +146,9 @@ class TrainingController extends Controller
 
     public function update(Training $training, Request $request)
     {
+        //untuk control dari sudut update
+        $this->authorize('update', $training);
+
         // update training with edited attributes
         // Method 2 - Mass Assignment
         $training->update($request->only('title', 'description', 'trainer'));
@@ -161,6 +164,8 @@ class TrainingController extends Controller
 
     public function delete(Training $training)
     {   
+        $this->authorize('delete', $training);
+
         $user = auth()->user();
         Notification::send($user, new DeleteTrainingNotification());
 

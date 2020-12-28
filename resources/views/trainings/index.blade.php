@@ -56,9 +56,11 @@
                                     <td>
                                         @can('view',$training)
                                         <a href="{{ route('training:show', $training) }}" class="btn btn-primary">View</a>
-                                        
-
+                                        @endcan                            
+                                        @can('update',$training)           
                                         <a href="{{ route('training:edit', $training) }}" class="btn btn-success">Edit</a>
+                                        @endcan
+                                        @can('delete',$training)
                                         <a onclick="return confirm('Are you sure?')" href="{{ route('training:delete', $training) }}" class="btn btn-danger">Delete</a>
                                         @endcan
 

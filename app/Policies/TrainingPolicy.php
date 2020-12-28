@@ -41,7 +41,7 @@ class TrainingPolicy
      */
     public function create(User $user)
     {
-        //
+        
     }
 
     /**
@@ -53,7 +53,7 @@ class TrainingPolicy
      */
     public function update(User $user, Training $training)
     {
-        //
+        return $user->id === $training->user_id;
     }
 
     /**
@@ -65,7 +65,7 @@ class TrainingPolicy
      */
     public function delete(User $user, Training $training)
     {
-        //
+        return $user->id === $training->user_id;
     }
 
     /**
