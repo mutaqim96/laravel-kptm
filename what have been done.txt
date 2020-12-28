@@ -143,4 +143,22 @@ Cara Nak Buat Job.
 * redis kita tak guna pun lagi. redis ni rdms.
 * php artisan make:job NamaJob.
 
+* Class structure tu. apa yang kita akan dapat.
+* kita nak guna driver, driver database. instead of rdbms. 
+* bila kita dispatch job, 
+
+λ php artisan migrate:status
++------+---------------------------------------------------------------+-------+
+| Ran? | Migration                                                     | Batch |
++------+---------------------------------------------------------------+-------+
+| Yes  | 2014_10_12_000000_create_users_table                          | 1     |
+| Yes  | 2014_10_12_100000_create_password_resets_table                | 1     |
+| Yes  | 2019_08_19_000000_create_failed_jobs_table                    | 1     |
+| Yes  | 2020_12_14_071318_create_trainings_table                      | 1     |
+| Yes  | 2020_12_22_024901_alter_trainings_table_add_attachment_column | 2     |
+| No   | 2020_12_28_034310_create_jobs_table                           |       |
++------+---------------------------------------------------------------+-------+
+
+
+*
 
