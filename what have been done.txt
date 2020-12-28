@@ -265,6 +265,20 @@ mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public
 * once dah install. boleh guna semua icon atau resource font awesome
 * contoh kat sini macam mana nak letak gambar user dekat sebelah nama.
 
+------------
+Laravel Notifications. 
+
+* toArray
+* toMail
+* toSlack
+
+* rujuk macam mana nak config
+* wajib letak notifiable
+
+* time user delete keluar notifications.
+* php artisan make:notification NamaNotification
+
+
 
 
 
