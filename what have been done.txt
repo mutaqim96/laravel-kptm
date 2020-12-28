@@ -311,3 +311,6 @@ kene tambah --model=Model.
 
 λ php artisan make:policy Training --model=Training
 Policy created successfully.
+
+* === strict equal
+* nak tengok override 403

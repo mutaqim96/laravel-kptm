@@ -131,6 +131,9 @@ class TrainingController extends Controller
 
     public function show(Training $training)
     {
+        //apa yang boleh tengok
+        $this->authorize('view', $training);
+
         // return to view
         return view('trainings.show', compact('training'));
     }
