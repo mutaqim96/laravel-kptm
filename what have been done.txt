@@ -76,4 +76,7 @@ Mail Trap:
 ------------------
 
 * copy credential terus paste dekat env
+* mail_from_address ; tak kisah email apa2. tak wujud pun tak pe.
+* done setup smtp setting.
+* Boleh try tengok aws. 
 
