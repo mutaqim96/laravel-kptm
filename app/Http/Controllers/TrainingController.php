@@ -9,6 +9,7 @@ use Storage;
 use App\Http\Requests\StoreTrainingRequest;
 use Mail;
 
+
 class TrainingController extends Controller
 {
     public function __construct()
@@ -107,7 +108,11 @@ class TrainingController extends Controller
         // });
 
         //send email to user using mailable class
-        Mail::to('mutaqim96@gmail.com')->send(new \App\Mail\TrainingCreated($training));
+        // Mail::to('mutaqim96@gmail.com')->send(new \App\Mail\TrainingCreated($training));
+        
+        //send mail guna job; cara nak dispatch job.
+        dispatch(new \App\Jobs\SendEmailJob($training));
+
 
         // return redirect back
         return redirect()

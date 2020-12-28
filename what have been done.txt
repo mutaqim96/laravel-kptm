@@ -163,5 +163,11 @@ Cara Nak Buat Job.
 * define dekat env. que_connection.
 * database/redis/sqs <- bergantung pada connection mana kita nak pakai.
 
+* php artisan make job
+* SendEmailJob
+* cara nak replace function dekat dalam controller
+* copy function yang lama sangt tu, declaire mail punya facade. define satu property training 
 
-
+* xde supervisor nak run job.
+* gambar tu jadikan job
+* bug fix. $this-> training =$training;
