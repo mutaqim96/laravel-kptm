@@ -184,3 +184,8 @@ Cara Nak Buat Job.
 * service container, apa2 class yang boleh di inject something, dan kita buat something with that data.
 * inject object daripada class lain. 
 
+----------
+* nak guna db elok pakai postgress
+* untuk esok, mssql server. kene ada ada extension
+* install extension, odbc untuk sql server
+
