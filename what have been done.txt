@@ -295,5 +295,19 @@ Making dropdown untuk notificaiton
 -----
 Training created
 
+* macam mana nak buat untuk unread notifications.
+* Search "unread notification"
+--------
+Policy
 
+cth: users takleh access unauthorize trainings.
 
+*php artisan make:policy PostPolicy.
+
+* kalau nak bind terus dengan model
+kene tambah --model=Model.
+
+*kalau bind. terus boleh create semua add delete.
+
+λ php artisan make:policy Training --model=Training
+Policy created successfully.
