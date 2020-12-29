@@ -343,3 +343,7 @@ Soft delete
 * kita boleh control policy.
 * dekat policy kita boleh force delete.
 * cascade.
+
+
+* start buat mvc kita. daripada route
+*buat route. untuk buat Force Delete

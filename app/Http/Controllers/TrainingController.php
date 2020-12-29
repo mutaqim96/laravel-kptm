@@ -181,4 +181,24 @@ class TrainingController extends Controller
                 'alert' => 'Your training has been deleted.'
             ]);
     }
+
+    public function forceDelete(Training $training)
+    {   
+        $this->authorize('delete', $training);
+
+        $user = auth()->user();
+        Notification::send($user, new DeleteTrainingNotification());
+
+        if($training->attachment){
+            Storage::disk('public')->delete($training->attachment);
+        }
+        $training->forceDelete();
+
+        return redirect()
+            ->route('training:list')
+            ->with([
+                'alert-type' => 'alert-danger',
+                'alert' => 'Your training has been deleted.'
+            ]);
+    }
 }
