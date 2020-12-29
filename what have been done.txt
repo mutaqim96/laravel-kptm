@@ -404,4 +404,20 @@ withTrash() -> semua training dengn yang disoft delete
 
 1. buat migration baru. isnullable tu kalau dah ada data. klaau x letak isnullable dia kan bagi error.
 
-2. php artisan make:middleware.
+2. php artisan make:middleware NamaMiddleware
+2.1 Buat logic dia dulu
+  $user = auth()->user() //adakah user ni dah diauthenticate
+    if($user->isAdmin !=1){
+                return redirect()->to('/home');
+            }
+
+3. register middleware. macam police traffic kene register. dekat kernel.php
+3.1 namakan middleware katt route midlleware
+
+'admin' => \App\Http\Middleware\AdminMiddleware::class, 
+
+4. pergi kat route. gunakan middleware tu. function dalam tu, admin je boleh access./ kat controller"trainingcontroller"
+4.1 hantar dalam bentuk array.
+$this->middleware(['namaMw1'],['namaMw2']);
+
+!pastikan ejaan betul dekat mana2 je.
