@@ -424,3 +424,8 @@ $this->middleware(['namaMw1'],['namaMw2']);
 -----------
 Dive deeper into laravel permission.
 * coding ninja. deliver dalam masa yang cepat.
+
+-----------
+cara nak GUNA PACKAGE LUAR.
+* kita boleh fix code, tapi x senang nak fix relationship.
+
