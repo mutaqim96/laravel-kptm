@@ -428,4 +428,25 @@ Dive deeper into laravel permission.
 -----------
 cara nak GUNA PACKAGE LUAR.
 * kita boleh fix code, tapi x senang nak fix relationship.
+* xnak reinvent the wheel.
+
+1A. Authenticaition Log
+  1. Search "laravel audit". tengok star dia, baru kita tau package tu power tak power. owen-it
+
+  2. Cara nak install, 
+  !fun facts: kalau npm untuk js, kalau composer untuk php
+   mana2 model yang kita nak monitor kita letak kat situ.
+
+   composer require owen-it/laravel-auditing   }}}}}}}kalau download dari github
+   php artisan auditing:install
+   php artisan migrate
+
+  use the OwenIt\Auditing\Auditable trait 
+  implement the Owenit\Auditing\Contracts\Auditable interface 
+
+  OwenIt\Auditing\Models\Audit -Model
+
+  2.1 kalau ada masalah dengan composer punya memory, ubah dekat php.ini memory_limit jadi -1 . 
+  2.2 kalau nak upgrade composer . composer upgrade
+
 
