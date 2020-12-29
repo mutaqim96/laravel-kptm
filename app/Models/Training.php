@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Owenit\Auditing\Contracts\Auditable;
 
-class Training extends Model implements Owenit\Auditing\Contracts\Auditable //kita guna auditable interface.
+class Training extends Model implements Auditable //kita guna auditable interface.
 {
     use HasFactory;
     use SoftDeletes;
