@@ -395,3 +395,13 @@ PHP Error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';' in 
 -------------------------------
 
 withTrash() -> semua training dengn yang disoft delete
+
+----------------------------
+*macam mana nak implement custom middleware.
+* kalau dia bukan admin. dia xleh access resource contoh dashbord.
+* tapi kene ada migration untuk buat table nak pegang status user.
+* cara untuk alter migration.
+
+1. buat migration baru. isnullable tu kalau dah ada data. klaau x letak isnullable dia kan bagi error.
+
+2. php artisan make:middleware.
