@@ -421,3 +421,6 @@ withTrash() -> semua training dengn yang disoft delete
 $this->middleware(['namaMw1'],['namaMw2']);
 
 !pastikan ejaan betul dekat mana2 je.
+-----------
+Dive deeper into laravel permission.
+* coding ninja. deliver dalam masa yang cepat.
