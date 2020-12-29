@@ -441,12 +441,14 @@ cara nak GUNA PACKAGE LUAR.
    php artisan auditing:install
    php artisan migrate
 
-  use the OwenIt\Auditing\Auditable trait 
-  implement the Owenit\Auditing\Contracts\Auditable interface 
+  use the OwenIt\Auditing\Auditable trait  }}dekat model tudalam class
+  implement the Owenit\Auditing\Contracts\Auditable interface  }} tambah dekat sebelah nama class, implements
 
   OwenIt\Auditing\Models\Audit -Model
 
   2.1 kalau ada masalah dengan composer punya memory, ubah dekat php.ini memory_limit jadi -1 . 
   2.2 kalau nak upgrade composer . composer upgrade
+
+  3. Kita tak nak contradicts antara traits dengan interface
 
 
