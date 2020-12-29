@@ -347,3 +347,5 @@ Soft delete
 
 * start buat mvc kita. daripada route
 *buat route. untuk buat Force Delete
+
+* kalau timezone pelik2. boleh tukar time
