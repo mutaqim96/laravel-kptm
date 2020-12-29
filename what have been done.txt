@@ -451,4 +451,21 @@ cara nak GUNA PACKAGE LUAR.
 
   3. Kita tak nak contradicts antara traits dengan interface
 
+  Tips: kalau nak buat apps apple, kene ada apple dev account 3 bulan prior
+  ------------------
+Authenticaition Log
+> POC how to use admin middleware
+* satu route yang hanya admin boleh access. cth: admin/route
+* Route::get('/admin/audits', [App\Http\Controllers\AuditController::class,'audit'])->middleware(['auth','admin']);
+* pergi buat auditcontroller. pastu buat function audit() 
+*//query all audits
+        $audits = Audit::orderBy('created_at','desc')->get();// jadi audit 1,2,3,4,5 klaau tambah order by
+
+        //reuturn to view
+        return view('audit',compact('audits')); //kita hantar audits
+
+* //
+
+
+
 

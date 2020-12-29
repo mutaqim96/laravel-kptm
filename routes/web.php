@@ -33,3 +33,6 @@ Route::get('/trainings/{training}/force-delete', [App\Http\Controllers\TrainingC
 
 
 Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->middleware('auth');
+
+Route::get('/admin/audits', [App\Http\Controllers\AuditController::class,'audit'])->middleware(['auth','admin']);
+
