@@ -89,6 +89,6 @@ class TrainingPolicy
      */
     public function forceDelete(User $user, Training $training)
     {
-        //
+        ///
     }
 }

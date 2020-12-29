@@ -322,3 +322,24 @@ Policy created successfully.
 kalau kita simply pindah can punya section. klau buang something dekat view. nanti smua berubah
 
 !update sekali dekat policy
+
+
+
+=================
+DAY 06
+=================
+
+Soft delete
+-
+* bila kita delete, tapi kita tak delete dalam database.
+* dia just akan buat satu lagi column untuk flag
+* kene buat soft delete
+* pastu kene migarate
+
+* kat model yang kita nak delete tu. kene declarie
+* setup dekat model2 yang terlibat.
+* lepas tu buat migration file
+* kita boleh bagi peluang kat user untuk restore dalam masa bbrapa hari. bergantung pada policy.
+* kita boleh control policy.
+* dekat policy kita boleh force delete.
+* cascade.
