@@ -497,3 +497,10 @@ Package: Authentication Log.
 ! letak dalam folder supaya kita boleh integrate macam macam template
 
 * buat 2 folder dalam admin tu.
+* setiap local asset call x dpt dipanggail secara local.
+
+*8 guna gelper punya asset.
+
+{{!! asset() !!}}
+
+{{asset('')}}
