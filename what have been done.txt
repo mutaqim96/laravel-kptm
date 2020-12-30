@@ -467,5 +467,16 @@ Authenticaition Log
 * //
 
 
+-----------------
+DAY 07: How to Develop start now
 
+*  untuk jalan panjang ada jalan pendek.
+php artisan cache:clear
+php artisan view:clear
+php artisan config:clear
+
+php artisan optimize
+
+
+*
 
