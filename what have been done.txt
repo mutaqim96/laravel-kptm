@@ -493,3 +493,5 @@ Package: Authentication Log.
   * extract.
   * dalam /dist
   * letak dekat dalam public folder laravel
+
+! letak dalam folder supaya kita boleh integrate macam macam template
