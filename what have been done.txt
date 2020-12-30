@@ -484,3 +484,12 @@ Package: Authentication Log.
 * search "laravel authentication log"
 * follow je step dia
 * search "mastering markdown"
+
+===========================
+# Integrating template
+
+1. Search "day3.tarsoft.co"
+  * click integrating with bootsrap
+  * extract.
+  * dalam /dist
+  * letak dekat dalam public folder laravel

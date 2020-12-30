@@ -58,4 +58,6 @@ class CreateTrainingNotification extends Notification
             'data' => '[System] training has been created.'
         ];
     }
+
+       
 }
