@@ -504,3 +504,46 @@ Package: Authentication Log.
 {{!! asset() !!}}
 
 {{asset('')}}
+
+
+------------
+public function changeLocale($locale){
+
+  app()->setLocale($locale);
+  $session()->put('locale', $locale);//kalau tak p kat 
+
+  return redirect()->back();
+}
+
+------------
+Buat middleware
+
+php artisan make:middleware Localization
+
+
+ada tak session locale.
+
+public function handle(Request $request, Closure $next){
+
+  if(session()->has('locale')){
+    app()->setLocale(session()->get('locale'));
+  }
+
+}
+----------
+Register middleware
+*register dekat kernel
+
+letak kat web. sebab api takyah lalu middleware.
+kalau letak kat middleware smua kene  lalu middleware ni. tapi api xyah lalu m/w ni so, letak kat web application level.
+---------
+Kene pastikan semua yang nak di display, kene ada __NamaNakTukar
+----------
+Kene buat dictionary
+
+pergi kat resource ada lang.
+buat satu file. "ms_MY.json"
+
+isi dengan NamaNakTukar <- apa yang bolehisi . contoh ikan
+
+

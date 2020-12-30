@@ -41,3 +41,5 @@ Route::get('/users', [App\Http\Controllers\UserController::class, 'index'])->mid
 
 Route::get('/admin/audits', [App\Http\Controllers\AuditController::class,'audit'])->middleware(['auth','admin']);
 
+Route::get('/language/{locale}', [App\Http\Controllers\LocalizationController::class, 'changeLocale']);
+
