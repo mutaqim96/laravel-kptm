@@ -495,3 +495,5 @@ Package: Authentication Log.
   * letak dekat dalam public folder laravel
 
 ! letak dalam folder supaya kita boleh integrate macam macam template
+
+* buat 2 folder dalam admin tu.

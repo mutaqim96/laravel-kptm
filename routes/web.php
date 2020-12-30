@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//test view terus takyah guna controller
+Route::view('/test','admin.layouts.main');
+
 Route::get('/', function () {
     return view('welcome');
 });
